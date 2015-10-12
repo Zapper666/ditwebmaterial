@@ -1,0 +1,333 @@
+body {
+  padding-bottom: 69px;
+}
+
+.content-heading {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 68px;
+}
+
+.page-brand .content-heading {
+  background-image: url(../images/logo.png);
+}
+
+/*calendar*/
+
+.clearfix:after, .calendar ol:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* ==========
+   Setup Page */
+/**, *:before, *:after {
+  box-sizing: border-box;
+}*/
+/* ================
+   Calendar Styling */
+.calendar {
+  background: white;
+  padding: 3em;
+  border-radius: 10px;
+}
+.calendar .month {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 3em;
+  color: #6EB590;
+}
+.calendar ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.calendar ol li {
+  float: left;
+  width: 14.28571%;
+}
+.calendar .day-names {
+  border-bottom: 1px solid #eee;
+}
+.calendar .day-names li {
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+.calendar .days li {
+  border-bottom: 1px solid #eee;
+  min-height: 8em;
+}
+.calendar .days li .date {
+  margin: .5em 0;
+}
+.calendar .days li .event {
+  background: #6EB590;
+  font-size: .75em;
+  padding: 0 .75em;
+  line-height: 2em;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 1em;
+  margin-bottom: 1px;
+}
+.calendar .days li .event.span-2 {
+  width: 200%;
+}
+.calendar .days li .event.begin {
+  border-radius: 1em 0 0 1em;
+}
+.calendar .days li .event.end {
+  border-radius: 0 1em 1em 0;
+}
+.calendar .days li .event.all-day {
+  background: #9987B5;
+}
+.calendar .days li .event.clear {
+  background: none;
+}
+.calendar .days li:nth-child(n+29) {
+  border-bottom: none;
+}
+.calendar .days li.outside .date {
+  color: #ddd;
+}
+
+
+/*gallery*/
+
+
+.gallery{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+[class*='thumbnail-']{
+  background: transparent;
+  width: 33.33%;
+  height: auto;
+  float: left;
+  padding: 5px 5px 3px 5px;
+  cursor: zoom-in;
+}
+
+[class*='thumbnail-'] img{
+  max-width: 100%;
+}
+
+[class*='large-']{
+  background: transparent;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  display: none;
+}
+
+[class*='large-'] img{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.prev{
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  float: left;
+}
+
+.next{
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  float: right;
+}
+
+.close{
+  color: #000;
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  float: right;
+  cursor: zoom-out;
+}
+
+[class*='thumbnail-']{
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  cursor: zoom-in;
+}
+
+[class*='thumbnail-']:hover img{
+  transition: .3s linear;
+  transition-delay: 300ms;
+  transform: /* rotate(5deg) */ scale(1.4);
+}
+
+[class*='thumbnail-'] > .caption{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+[class*='thumbnail-']:hover > .caption{
+  display: block;
+ 
+}
+
+@media screen and (max-width:480px){
+  .caption h3{
+    font-size: 12px;
+  }
+}
+
+/*video*/
+
+.galeria {
+position: relative;
+width: 80%; /* Ancho a ocupar por la galería sobre el total disponible */
+overflow: hidden;
+margin: 20px auto;
+background-color: #000;
+box-shadow: 1px 1px 6px #000;
+}
+.galeria:before {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: url(https://lh4.googleusercontent.com/-3QNEIgX3Gv4/UCPyLTtnmHI/AAAAAAAAEDY/KGb0eEM9GZo/s720/fuerzas-naturaleza.jpg); /* Fondo por defecto */
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+opacity: .1;
+}
+.imagen {
+position: relative;
+width: 15%; /* Ancho de la miniatura sobre el ancho total de la galería */
+padding-bottom: 15%; /* Idéntico al anterior para miniaturas cuadradas */
+background-position: 50% 50%;
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+cursor: pointer;
+}
+.imagen:nth-of-type(1) {
+background-image: url(https://lh4.googleusercontent.com/-3QNEIgX3Gv4/UCPyLTtnmHI/AAAAAAAAEDY/KGb0eEM9GZo/s720/fuerzas-naturaleza.jpg);
+}
+.imagen:nth-of-type(2) {
+background-image: url(https://lh5.googleusercontent.com/-KijskybjlCc/UCPyNCwVxPI/AAAAAAAAEDg/8AwgBhZyhG4/s800/fuerzas-naturaleza2.jpg);
+}
+.imagen:nth-of-type(3) {
+background-image: url(https://lh5.googleusercontent.com/-uGIMoR677PM/UCPyOBjNWVI/AAAAAAAAEDo/XE73W5FQW-c/s800/fuerzas-naturaleza3.jpg);
+}
+.imagen:nth-of-type(4) {
+background-image: url(https://lh5.googleusercontent.com/-nbNq900tVT4/UCPyQeZkP_I/AAAAAAAAEDw/WsBQhD2Da-o/s800/fuerzas-naturaleza4.jpg);
+}
+.imagen:before {
+content: "";
+position: absolute;
+top: -700%; /* ((Nºimágenes*2)-1)*100*/
+left: 100%;
+width: 566%; /* (10000/ancho_imagen)-100 */
+height: 400%; /* Nºimagenes*100 */
+background-image: inherit;
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+-moz-transition: all .8s ;-webkit-transition: all .8s ;transition: all .8s ;
+}
+.imagen:hover:nth-of-type(1):before {
+top: 0%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(2):before {
+top: -100%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(3):before {
+top: -200%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(4):before {
+top: -300%; /* (Nº.nth-1)*(-100) */
+}
+
+
+
+/*pagination*/
+
+.page a {
+  transition: all 150ms ease;
+  color: rebeccapurple;
+  border: 1px solid transparent;
+  text-decoration: none;
+  line-height: 36px;
+}
+.page a:hover {
+  color: #4c2673;
+  border: 1px solid rebeccapurple;
+  border-radius: 2px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pagination {
+  padding: 20px 0;
+  border-top: 1px solid #efefef;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.pagination a {
+  color: #999;
+  text-align: center;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+.pagination a:hover {
+  color: rebeccapurple;
+}
+.pagination .more {
+  color: #111;
+}
+.pagination .active {
+  color: rebeccapurple;
+  border: 1px solid rebeccapurple;
+  border-radius: 2px;
+}
+.pagination .prev, .pagination .next {
+  width: auto;
+  padding: 0 10px;
+  margin-top: -1em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.pagination .prev {
+  position: absolute;
+  left: 10px;
+}
+.pagination .prev .icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+.pagination .next {
+  float: right;
+}
+.pagination .next .icon {
+  margin-left: 10px;
+}
