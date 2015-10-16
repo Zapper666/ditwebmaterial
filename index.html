@@ -25,6 +25,16 @@
 		<![endif]-->
 </head>
 <body class="avoid-fout page-brand">
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+
 	<div class="avoid-fout-indicator avoid-fout-indicator-fixed">
 		<div class="progress-circular progress-circular-center">
 			<div class="progress-circular-wrapper">
@@ -108,7 +118,7 @@
 				</div>
 			</li>
 		</ul>
-		<ul class="nav nav-list pull-right visible-xs">
+		<ul class="nav nav-list pull-right visible-xs hidden-md hidden-lg">
 			<li>
 				<a data-toggle="menu" href="#profile">
 					<span class="icon icon-lg text-blue">dehaze</span>
@@ -163,7 +173,7 @@
 								    </ul>
 							</div>
 						</li>
-						<li class="visible-xs">
+						<li class="visible-xs hidden-md hidden-lg">
 							<div>
 								<a class="btn btn-flat waves-attach" href="galeri.html">
 									<span class="text-blue">Galeri</span></a>
@@ -186,7 +196,7 @@
 								    </ul>
 							</div>
 						</li>
-						<li class="visible-xs">
+						<li class="visible-xs hidden-md hidden-lg">
 							<div>
 								<a class="btn btn-flat waves-attach" href="galeri.html">
 									<span class="text-blue">Tentang</span></a>
@@ -201,49 +211,111 @@
 				</div>
 			</div>
 	</nav>
-	<div class="content">
+	<div class="content background-content">
 		<div class="content-heading">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
-						<h1 class="heading">Selamat Datang</h1>
-					</div>
-				</div>
-			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-3">
-					<div class="card">
-						<div class="card-main">
+				<div class="col-sm-12">
+							<!-- <h1 class="heading">Selamat Datang</h1> -->
+								<img alt="alt text" src="images/head-banner.png" class="img-responsive">
+					<!-- <div class="card">
+						<div class="card-main">							
 							<div class="card-img">
-								<img alt="alt text" src="images/direktur.jpg">
 							</div>
-							<div class="card-action">
+						</div>
+					</div> -->
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-main dapodik">
+							<div class="card-img">
+								<!-- <img alt="alt text" src="images/samples/landscape.jpg"> -->
+								<div class="progress-pie-chart" data-percent="99">
+								  <div class="ppc-progress">
+								    <div class="ppc-progress-fill"></div>
+								  </div>
+								  <div class="ppc-percents">
+								    <div class="pcc-percents-wrapper">
+								      <span>%</span>
+								    </div>
+								  </div>
+								</div>							
+							</div>
+							<div class="card-action hidden-xs hidden-sm">
 								<div class="card-action-btn pull-left">
-									<a class="btn btn-flat waves-attach" href="sambutan.html"><span class="icon text-blue">launch</span>&nbsp;<span class="text-blue">Sambutan</span></a>
+									<a class="btn btn-flat waves-attach" href="#dapodik"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress Dapodik</span></a>
 								</div>
-								<!-- <ul class="margin-no nav nav-list pull-right">
-									<li class="dropdown">
-										<a class="dropdown-toggle text-default waves-attach" data-toggle="dropdown"><span class="icon">keyboard_arrow_down</span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_1</span>&nbsp;Lorem Ipsum</a>
-											</li>
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_2</span>&nbsp;Consectetur Adipiscing</a>
-											</li>
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_3</span>&nbsp;Sed Ornare</a>
-											</li>
-										</ul>
-									</li>
-								</ul> -->
+							</div>
+							<div class="card-action visible-xs">
+								<div class="card-action-btn pull-left">
+									<a class="btn btn-flat waves-attach" href="#"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress Dapodik</span></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-9">
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-main dak">
+							<div class="card-img">
+								<!-- <img alt="alt text" src="images/samples/landscape.jpg"> -->
+								<div class="progress-pie-chart" data-percent="99">
+								  <div class="ppc-progress">
+								    <div class="ppc-progress-fill"></div>
+								  </div>
+								  <div class="ppc-percents">
+								    <div class="pcc-percents-wrapper">
+								      <span>%</span>
+								    </div>
+								  </div>
+								</div>							
+							</div>
+							<div class="card-action hidden-xs hidden-sm">
+								<div class="card-action-btn pull-left">
+									<a class="btn btn-flat waves-attach" href="#dak"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress DAK</span></a>
+								</div>
+							</div>
+							<div class="card-action visible-xs">
+								<div class="card-action-btn pull-left">
+									<a class="btn btn-flat waves-attach" href="#"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress DAK</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-main bansos">
+							<div class="card-img">
+								<!-- <img alt="alt text" src="images/samples/landscape.jpg"> -->
+								<div class="progress-pie-chart" data-percent="99">
+								  <div class="ppc-progress">
+								    <div class="ppc-progress-fill"></div>
+								  </div>
+								  <div class="ppc-percents">
+								    <div class="pcc-percents-wrapper">
+								      <span>%</span>
+								    </div>
+								  </div>
+								</div>							
+							</div>
+							<div class="card-action hidden-xs hidden-sm">
+								<div class="card-action-btn pull-left">
+									<a class="btn btn-flat waves-attach" href="#bansos"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress Bansos</span></a>
+								</div>
+							</div>
+							<div class="card-action visible-xs">
+								<div class="card-action-btn pull-left">
+									<a class="btn btn-flat waves-attach" href="#"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress Bansos</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
 					<div class="card">
 						<aside class="card-side card-side-img pull-right">
 							<img alt="alt text" src="images/samples/portrait.jpg">
@@ -263,10 +335,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-9">
+				<div class="col-sm-12">
 					<div class="card">
 						<aside class="card-side card-side-img pull-right">
 							<img alt="alt text" src="images/samples/portrait.jpg">
@@ -286,16 +355,116 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-9">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="card">
+							<aside class="card-side card-side-img pull-right">
+								<img alt="alt text" src="images/samples/portrait.jpg">
+							</aside>
+							<div class="card-main">
+								<div class="card-inner">
+									<p class="card-heading">Berita Terkini</p>
+									<p class="margin-bottom-lg">
+										Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+									</p>
+								</div>
+								<div class="card-action">
+									<div class="card-action-btn pull-left">
+										<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lihat</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="card">
+							<div class="card-action">
+								<div class="card-action-btn pull-left">
+									<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lorem Lorem Ipsum Dolor sit amet</span></a>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="col-sm-5 mt-min-3">
+					<div class="card">
+						<div class="card-action">
+							<div class="card-action-btn pull-left">
+								<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lorem Lorem Ipsum Dolor sit amet</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5 mt-min-3">
+					<div class="card">
+						<div class="card-action">
+							<div class="card-action-btn pull-left">
+								<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lorem Lorem Ipsum Dolor sit amet</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5 mt-min-3">
+					<div class="card">
+						<div class="card-action">
+							<div class="card-action-btn pull-left">
+								<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lorem Lorem Ipsum Dolor sit amet</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5 mt-min-3">
+					<div class="card">
+						<div class="card-action">
+							<div class="card-action-btn pull-left">
+								<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lorem Lorem Ipsum Dolor sit amet</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5 mt-min-3">
+					<div class="card">
+						<div class="card-action">
+							<div class="card-action-btn pull-left">
+								<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lorem Lorem Ipsum Dolor sit amet</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div id="location" class="row">
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-main">
+							<div class="card-inner">
+								<p class="card-heading">Hubungi Kami</p>
+								<p class="margin-bottom-lg">
+									<p>Direktorat Pembinaan SD</p>
+
+									<p>Kompleks Kemendikbud Gedung E Lt. 17</p>
+									<p>Jl. Jenderal Sudirman,Senayan Jakarta - Indonesia 12070</p>
+									<p>Telp: 021-572-5635, Fax: 021-572-5641</p>
+								</p>
+							</div>
+							<div class="card-action">
+								<div class="card-action-btn pull-left">
+									<a class="btn btn-flat waves-attach" href="tel:0215725635"><span class="icon text-blue icon-3x">call</span>&nbsp;</a>
+									<a class="btn btn-flat waves-attach" href="mailto:ditpsd@gmail.com"><span class="icon text-blue icon-3x">email</span>&nbsp;</a>
+									<a class="btn btn-flat waves-attach" href="#map"><span class="icon text-blue icon-3x">maps</span>&nbsp;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-8">
 					<div class="card">
 						<aside class="card-side card-side-img pull-right">
 							<img alt="alt text" src="images/samples/portrait.jpg">
 						</aside>
 						<div class="card-main">
 							<div class="card-inner">
-								<p class="card-heading">Berita Terkini</p>
+								<p class="card-heading">Berita Terhangat</p>
 								<p class="margin-bottom-lg">
-									Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+									Selamat kepada Drs. Wowon Widaryat, MSi., sebagai direktur baru di lingkungan direktorat pembinaan sekolah dasar.
 								</p>
 							</div>
 							<div class="card-action">
@@ -309,7 +478,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<div class="card">
 						<div class="card-main">
 							<div class="card-img">
@@ -322,73 +491,65 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-8">
 					<div class="card">
+						<aside class="card-side card-side-img pull-right">
+							<img alt="alt text" src="images/samples/portrait.jpg">
+						</aside>
 						<div class="card-main">
-							<div class="card-img">
-								<!-- <img alt="alt text" src="images/samples/landscape.jpg"> -->
-								<div class="progress-pie-chart" data-percent="99">
-								  <div class="ppc-progress">
-								    <div class="ppc-progress-fill"></div>
-								  </div>
-								  <div class="ppc-percents">
-								    <div class="pcc-percents-wrapper">
-								      <span>%</span>
-								    </div>
-								  </div>
-								</div>							
+							<div class="card-inner">
+								<p class="card-heading">Berita Terhangat</p>
+								<p class="margin-bottom-lg">
+									Selamat kepada Drs. Wowon Widaryat, MSi., sebagai direktur baru di lingkungan direktorat pembinaan sekolah dasar.
+								</p>
 							</div>
 							<div class="card-action">
 								<div class="card-action-btn pull-left">
-									<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress Dapodik</span></a>
+									<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lihat</span></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
 					<div class="card">
 						<div class="card-main">
-							<div class="card-img">
-								<!-- <img alt="alt text" src="images/samples/landscape.jpg"> -->
-								<div class="progress-pie-chart" data-percent="99">
-								  <div class="ppc-progress">
-								    <div class="ppc-progress-fill"></div>
-								  </div>
-								  <div class="ppc-percents">
-								    <div class="pcc-percents-wrapper">
-								      <span>%</span>
-								    </div>
-								  </div>
-								</div>							
+							<div class="card-inner">
+								<div class="card-action">
+									<div class="card-action-btn pull-left">
+										<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">download</span>&nbsp;<span class="text-blue">Lorem Lorem Ipsum Dolor sit amet</span></a>
+									</div>
+								</div>
 							</div>
 							<div class="card-action">
 								<div class="card-action-btn pull-left">
-									<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress DAK</span></a>
+									<a class="btn btn-flat waves-attach" href="tel:0215725635"><span class="icon text-blue icon-3x">call</span>&nbsp;</a>
+									<a class="btn btn-flat waves-attach" href="mailto:ditpsd@gmail.com"><span class="icon text-blue icon-3x">email</span>&nbsp;</a>
+									<a class="btn btn-flat waves-attach" href="#map"><span class="icon text-blue icon-3x">maps</span>&nbsp;</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+
+				<div class="col-sm-8">
 					<div class="card">
+						<aside class="card-side card-side-img pull-right">
+							<img alt="alt text" src="images/samples/portrait.jpg">
+						</aside>
 						<div class="card-main">
-							<div class="card-img">
-								<!-- <img alt="alt text" src="images/samples/landscape.jpg"> -->
-								<div class="progress-pie-chart" data-percent="99">
-								  <div class="ppc-progress">
-								    <div class="ppc-progress-fill"></div>
-								  </div>
-								  <div class="ppc-percents">
-								    <div class="pcc-percents-wrapper">
-								      <span>%</span>
-								    </div>
-								  </div>
-								</div>							
+							<div class="card-inner">
+								<p class="card-heading">Berita Terhangat</p>
+								<p class="margin-bottom-lg">
+									Selamat kepada Drs. Wowon Widaryat, MSi., sebagai direktur baru di lingkungan direktorat pembinaan sekolah dasar.
+								</p>
 							</div>
 							<div class="card-action">
 								<div class="card-action-btn pull-left">
-									<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Progress Bansos</span></a>
+									<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue">check</span>&nbsp;<span class="text-blue">Lihat</span></a>
 								</div>
 							</div>
 						</div>
@@ -407,22 +568,6 @@
 								<div class="card-action-btn pull-left">
 									<a class="btn btn-flat waves-attach" href="gallery.html"><span class="icon text-blue">collections</span>&nbsp;<span class="text-blue">Galeri Foto</span></a>
 								</div>
-								<!-- <ul class="margin-no nav nav-list pull-right">
-									<li class="dropdown">
-										<a class="dropdown-toggle text-default waves-attach" data-toggle="dropdown"><span class="icon">keyboard_arrow_down</span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_1</span>&nbsp;Lorem Ipsum</a>
-											</li>
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_2</span>&nbsp;Consectetur Adipiscing</a>
-											</li>
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_3</span>&nbsp;Sed Ornare</a>
-											</li>
-										</ul>
-									</li>
-								</ul> -->
 							</div>
 						</div>
 					</div>
@@ -438,22 +583,6 @@
 								<div class="card-action-btn pull-left">
 									<a class="btn btn-flat waves-attach" href="video.html"><span class="icon text-blue">camera roll</span>&nbsp;<span class="text-blue">Galeri Video</span></a>
 								</div>
-								<!-- <ul class="margin-no nav nav-list pull-right">
-									<li class="dropdown">
-										<a class="dropdown-toggle text-default waves-attach" data-toggle="dropdown"><span class="icon">keyboard_arrow_down</span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_1</span>&nbsp;Lorem Ipsum</a>
-											</li>
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_2</span>&nbsp;Consectetur Adipiscing</a>
-											</li>
-											<li>
-												<a class="waves-attach" href="javascript:void(0)"><span class="icon margin-right-sm">filter_3</span>&nbsp;Sed Ornare</a>
-											</li>
-										</ul>
-									</li>
-								</ul> -->
 							</div>
 						</div>
 					</div>
@@ -461,115 +590,141 @@
 			</div>
 
 
-
-
-
-
-
-
-
-
-
-				<!-- <div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
-					<section class="content-inner">
-						<p>Material is an HTML5 UI design based on Google Material.</p>
-						<blockquote>
-							<p>A visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. This is material design.</p>
-							<p><a class="text-break" href="http://www.google.com/design/spec/material-design/introduction.html">http://www.google.com/design/spec/material-design/introduction.html</a></p>
-						</blockquote>
-						<p>Have a play with a <a href="http://daemonite.github.io/material/">working prototype of Material</a>, let us know what you think at the <a href="http://labs.daemon.com.au">Daemon Labs</a> forum.</p>
-						<h2 class="content-sub-heading">Components</h2>
-						<div class="tile-wrap">
-							<a class="tile waves-attach" href="ui-card.html">
-								<div class="tile-inner">
-									<span>Cards</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-collapse.html">
-								<div class="tile-inner">
-									<span>Collapsible Regions</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-dropdown.html">
-								<div class="tile-inner">
-									<span>Dropdowns</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-modal.html">
-								<div class="tile-inner">
-									<span>Modal &amp; Toasts</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-nav.html">
-								<div class="tile-inner">
-									<span>Navs</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-progress.html">
-								<div class="tile-inner">
-									<span>Progress Bars</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-tab.html">
-								<div class="tile-inner">
-									<span>Tabs</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-tile.html">
-								<div class="tile-inner">
-									<span>Tiles</span>
-								</div>
-							</a>
-						</div>
-						<h2 class="content-sub-heading">Elements</h2>
-						<div class="tile-wrap">
-							<a class="tile waves-attach" href="ui-button.html">
-								<div class="tile-inner">
-									<span>Button</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-form.html">
-								<div class="tile-inner">
-									<span>Form Elements <small>(basic)</small></span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-form-adv.html">
-								<div class="tile-inner">
-									<span>Form Elements <small>(materialised)</small></span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-icon.html">
-								<div class="tile-inner">
-									<span>Icons</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="ui-table.html">
-								<div class="tile-inner">
-									<span>Tables</span>
-								</div>
-							</a>
-						</div>
-						<h2 class="content-sub-heading">Sample Pages</h2>
-						<div class="tile-wrap">
-							<a class="tile waves-attach" href="page-login.html">
-								<div class="tile-inner">
-									<span>Login Page</span>
-								</div>
-							</a>
-							<a class="tile waves-attach" href="page-palette.html">
-								<div class="tile-inner">
-									<span>Page Palettes</span>
-								</div>
-							</a>
-						</div>
-					</section>
+			<!-- Kemdikbud Map -->
+			<div id="map" class="overlay">
+				<div class="popup-map">
+					<h2>Kemdikbud di Map</h2>
+					<a class="close" href="#">&times;</a>
+					<div class="content">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.270127779024!2d106.79735331446665!3d-6.228072995491635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x552292fbf06b373b!2sKementerian+Pendidikan+Dan+Kebudayaan!5e0!3m2!1sen!2sid!4v1444969463497" width="350" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div> -->
+			<!-- End Kemdikbud Map -->
+
+			<!-- Pie Chart -->
+			<div id="dapodik" class="overlay">
+				<div class="popup-dapodik">
+					<h2>Progress Dapodik</h2>
+					<a class="close" href="#">&times;</a>
+					<div class="content">
+						<div class="progressDiv">
+			          <div class="statChartHolder">
+			              <div class="progress-pie-chart" data-percent="67"><!--Pie Chart -->
+			                  <div class="ppc-progress">
+			                      <div class="ppc-progress-fill"></div>
+			                  </div>
+			                  <div class="ppc-percents">
+			                  <div class="pcc-percents-wrapper">
+			                      <span>%</span>
+			                  </div>
+			                  </div>
+			              </div><!--End Chart -->
+			          </div>
+			          <div class="statRightHolder">
+			              <ul>
+			              <li> <h3 class="blue">39.4k</h3> <span>Interactions</span></li>
+			              <li> <h3 class="purple">1.8k</h3> <span>Posts</span></li>
+			              </ul>
+			              
+			                  <ul class="statsLeft">
+			                  <li><h3 class="yellow">22%</h3> <span>Comments</span></li>
+			                  <li><h3 class="red">37%</h3> <span>Cheers</span></li>
+			                  </ul>
+			                      <ul class="statsRight">
+			                          <li><h3>18%</h3> <span>Tasks</span></li>
+			                          <li><h3>23%</h3> <span>Goals</span></li>
+			                      </ul>
+			          </div>
+			          
+			      </div>
+			    </div>
+				</div>
+			</div>
+
+			<div id="dak" class="overlay">
+				<div class="popup-dak">
+					<h2>Progress Dak</h2>
+					<a class="close" href="#">&times;</a>
+					<div class="content">
+						<div class="progressDiv">
+			          <div class="statChartHolder">
+			              <div class="progress-pie-chart" data-percent="67"><!--Pie Chart -->
+			                  <div class="ppc-progress">
+			                      <div class="ppc-progress-fill"></div>
+			                  </div>
+			                  <div class="ppc-percents">
+			                  <div class="pcc-percents-wrapper">
+			                      <span>%</span>
+			                  </div>
+			                  </div>
+			              </div><!--End Chart -->
+			          </div>
+			          <div class="statRightHolder">
+			              <ul>
+			              <li> <h3 class="blue">39.4k</h3> <span>Interactions</span></li>
+			              <li> <h3 class="purple">1.8k</h3> <span>Posts</span></li>
+			              </ul>
+			              
+			                  <ul class="statsLeft">
+			                  <li><h3 class="yellow">22%</h3> <span>Comments</span></li>
+			                  <li><h3 class="red">37%</h3> <span>Cheers</span></li>
+			                  </ul>
+			                      <ul class="statsRight">
+			                          <li><h3>18%</h3> <span>Tasks</span></li>
+			                          <li><h3>23%</h3> <span>Goals</span></li>
+			                      </ul>
+			          </div>
+			          
+			      </div>
+			    </div>
+				</div>
+			</div>
+
+			<div id="bansos" class="overlay">
+				<div class="popup-bansos">
+					<h2>Progress Bansos</h2>
+					<a class="close" href="#">&times;</a>
+					<div class="content">
+						<div class="progressDiv">
+			          <div class="statChartHolder">
+			              <div class="progress-pie-chart" data-percent="67"><!--Pie Chart -->
+			                  <div class="ppc-progress">
+			                      <div class="ppc-progress-fill"></div>
+			                  </div>
+			                  <div class="ppc-percents">
+			                  <div class="pcc-percents-wrapper">
+			                      <span>%</span>
+			                  </div>
+			                  </div>
+			              </div><!--End Chart -->
+			          </div>
+			          <div class="statRightHolder">
+			              <ul>
+			              <li> <h3 class="blue">39.4k</h3> <span>Interactions</span></li>
+			              <li> <h3 class="purple">1.8k</h3> <span>Posts</span></li>
+			              </ul>
+			              
+			                  <ul class="statsLeft">
+			                  <li><h3 class="yellow">22%</h3> <span>Comments</span></li>
+			                  <li><h3 class="red">37%</h3> <span>Cheers</span></li>
+			                  </ul>
+			                      <ul class="statsRight">
+			                          <li><h3>18%</h3> <span>Tasks</span></li>
+			                          <li><h3>23%</h3> <span>Goals</span></li>
+			                      </ul>
+			          </div>
+			          
+			      </div>
+			    </div>
+				</div>
+			</div>
+
 	<footer class="footer">
 		<div class="container">
-			<p>Kementerian Pendidikan dan Kebudayaan</p>
+			<div class"col-sm-12">
+				<span>Copyright </span><span class="fa fa-icon fa-copyright"> Kementerian Pendidikan dan Kebudayaan</span>
+			</div>
 		</div>
 	</footer>
 	<!-- <div class="fbtn-container">
@@ -589,5 +744,23 @@
 
 	<!-- js for this project -->
 	<script src="js/project.js"></script>
+
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1634158456837856',
+	      xfbml      : true,
+	      version    : 'v2.5'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 </body>
 </html>

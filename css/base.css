@@ -1471,8 +1471,8 @@ th {
 }
 
 .row {
-  margin-right: -16px;
-  margin-left: -16px;
+  margin-right: 0;
+  margin-left: 0;
 }
 .row:after, .row:before {
   content: "";
@@ -3039,6 +3039,19 @@ body.el-loading {
           flex: 1;
   min-width: 0;
 }
+
+.dapodik {
+background-color: #1976d2;
+}
+
+.dak {
+background-color: #00796b;
+}
+
+.bansos {
+background-color: #616161;
+}
+
 .no-flexbox .card-side ~ .card-main {
   overflow: hidden;
 }
@@ -5703,7 +5716,7 @@ div[data-toggle="tile"] [data-ignore="tile"] {
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
   text-align: center;
-  padding-top: 12px;
+  padding-top: 36px;
   padding-bottom: 12px;
   position: absolute;
   bottom: 0;
