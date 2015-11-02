@@ -805,7 +805,36 @@ div.tree > ul > li > a {
     height: 100%;
 }
 
+.nav-bdr:nth-child(1n+1) {
+  border-left: 1px solid #aed581;
+}
 
 /*=======================*/
       /*Mobile View*/
 /*=======================*/
+
+
+.chart {
+    position:relative;
+    width:165px;
+    height:165px;
+    margin: 0 auto;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300 ;
+
+}
+canvas {
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+q {
+    display:block;
+    line-height:165px;
+    text-align:center;
+    width:165px;
+    font-size:40px;
+    font-weight:300;
+    margin-left:5px;
+}
