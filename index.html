@@ -25,7 +25,7 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 </head>
-<body class="avoid-fout page-brand">
+<body class="avoid-fout page-brand" onload="startTime()">
 	<div class="avoid-fout-indicator avoid-fout-indicator-fixed">
 		<div class="progress-circular progress-circular-center">
 			<div class="progress-circular-wrapper">
@@ -223,47 +223,184 @@
 						</div>
 					</div> -->
 				</div>
-				    <div class="row">
-				      <div class="col-sm-4 text-center">
-				      	<div class="card">
-				      		<div class="card-main">
-				      			<div class="card-img dapodik">
-							        <div class="chart" id="graph1" data-percent="70" data-color="#30bae7">
-							        </div>
-							        <figcaption>
-							          <h3>Dapodik</h3>
-							        </figcaption>
-							      </div>
-							    </div>
-							  </div>
+
+				<!-- Dapodik Chart -->
+				<div class="col-sm-4">
+				  <div class="widget">
+				    
+				    <div class="section section-graph">
+				      <div class="graph-info">
+				        <i class="graph-arrow"></i>
+				        <span class="graph-info-big">634.39</span>
+				        <span class="graph-info-small">+2.18 (3.71%)</span>
 				      </div>
-				      <div class="col-sm-4 text-center">
-				      	<div class="card">
-				      		<div class="card-main">
-				      			<div class="card-img dak">
-							        <div class="chart" id="graph2" data-percent="90" data-color="#4db6ac">
-							        </div>
-							        <figcaption>
-							          <h3>DAK</h3>
-							        </figcaption>
-							      </div>
-							    </div>
-							  </div>
-				      </div>
-				      <div class="col-sm-4 text-center">
-				      	<div class="card">
-				      		<div class="card-main">
-				      			<div class="card-img bansos">
-							        <div class="chart" id="graph3" data-percent="50" data-color="#a1887f"></div>
-							        <figcaption>
-							          <h3>Bansos</h3>
-							        </figcaption>
-							      </div>
-							    </div>
-							  </div>
+				      <div id="graph">
+				      	<div class="chart" id="graph1" data-percent="99" data-color="#30bae7">
+				      	</div>
 				      </div>
 				    </div>
+				    
+				    <div class="section section-info">
+				      <span class="info-time">Hari ini 2:25 PM</span>
+				      <h3 class="info-title">Progress Pengiriman Data Siswa SD DAPODIK</h3>
+				      
+				      <div class="info-block">
+				        <dl>
+				          <dt>26.098.380</dt>
+				          <dd>2014/2015</dd>
+				        </dl>
+				      </div>
+				      
+				      <div class="info-block last">
+				        <dl>
+				          <dt>25.896.626</dt>
+				          <dd>Sekarang</dd>
+				        </dl>
+				      </div>
+				      
+				      <div class="info-aapl">
+				        <h4>AAPL</h4>
+				        <ul>
+				          <li><span class="orange" style="height: 37.5%"></span></li>
+				          <li><span class="orange" style="height: 47.5%"></span></li>
+				          <li><span class="orange" style="height: 70%"></span></li>
+				          <li><span class="orange" style="height: 85%"></span></li>
+				          <li><span class="orange" style="height: 40%"></span></li>
+				          <li><span class="green" style="height: 75%"></span></li>
+				          <li><span class="green" style="height: 50%"></span></li>
+				          <li><span class="green" style="height: 15%"></span></li>
+				          <li><span class="green" style="height: 25%"></span></li>
+				        </ul>
+				      </div>
+				      
+				      <div class="yearly-change">
+				        <h4>Perubahan</h4>
+				        <span><em>-</em> 201.754</span>
+				      </div>
+				    </div>
+				    <div class="section"></div>
+				  </div>
+				</div>
+				<!-- End Dapodik Chart -->
 
+				<!-- DAK Chart -->
+				<div class="col-sm-4">
+				  <div class="widget">
+				    
+				    <div class="section section-graph">
+				      <div class="graph-info">
+				        <i class="graph-arrow"></i>
+				        <span class="graph-info-big">634.39</span>
+				        <span class="graph-info-small">+2.18 (3.71%)</span>
+				      </div>
+				      <div id="graph">
+				      	<div class="chart" id="graph2" data-percent="60" data-color="#4caf50">
+				      	</div>
+				      </div>
+				    </div>
+				    
+				    <div class="section section-info">
+				      <span class="info-time">Hari ini 2:25 PM</span>
+				      <h3 class="info-title">Progress Dana Bantuan SD DAK</h3>
+				      
+				      <div class="info-block">
+				        <dl>
+				          <dt>26.098.380</dt>
+				          <dd>2014/2015</dd>
+				        </dl>
+				      </div>
+				      
+				      <div class="info-block last">
+				        <dl>
+				          <dt>25.896.626</dt>
+				          <dd>Sekarang</dd>
+				        </dl>
+				      </div>
+				      
+				      <div class="info-aapl">
+				        <h4>AAPL</h4>
+				        <ul>
+				          <li><span class="orange" style="height: 37.5%"></span></li>
+				          <li><span class="orange" style="height: 47.5%"></span></li>
+				          <li><span class="orange" style="height: 70%"></span></li>
+				          <li><span class="orange" style="height: 85%"></span></li>
+				          <li><span class="orange" style="height: 40%"></span></li>
+				          <li><span class="green" style="height: 75%"></span></li>
+				          <li><span class="green" style="height: 50%"></span></li>
+				          <li><span class="green" style="height: 15%"></span></li>
+				          <li><span class="green" style="height: 25%"></span></li>
+				        </ul>
+				      </div>
+				      
+				      <div class="yearly-change">
+				        <h4>Perubahan</h4>
+				        <span><em>-</em> 201.754</span>
+				      </div>
+				    </div>
+				    <div class="section"></div>
+				  </div>
+				</div>
+				<!-- End DAK Chart -->
+
+				<!-- BANSOS Chart -->
+				<div class="col-sm-4">
+				  <div class="widget">
+				    
+				    <div class="section section-graph">
+				      <div class="graph-info">
+				        <i class="graph-arrow"></i>
+				        <span class="graph-info-big">634.39</span>
+				        <span class="graph-info-small">+2.18 (3.71%)</span>
+				      </div>
+				      <div id="graph">
+				      	<div class="chart" id="graph3" data-percent="80" data-color="#795548">
+				      	</div>
+				      </div>
+				    </div>
+				    
+				    <div class="section section-info">
+				      <span class="info-time">Hari ini 2:25 PM</span>
+				      <h3 class="info-title">Progress Dana Serapan SD BANSOS</h3>
+				      
+				      <div class="info-block">
+				        <dl>
+				          <dt>26.098.380</dt>
+				          <dd>2014/2015</dd>
+				        </dl>
+				      </div>
+				      
+				      <div class="info-block last">
+				        <dl>
+				          <dt>25.896.626</dt>
+				          <dd>Sekarang</dd>
+				        </dl>
+				      </div>
+				      
+				      <div class="info-aapl">
+				        <h4>AAPL</h4>
+				        <ul>
+				          <li><span class="orange" style="height: 37.5%"></span></li>
+				          <li><span class="orange" style="height: 47.5%"></span></li>
+				          <li><span class="orange" style="height: 70%"></span></li>
+				          <li><span class="orange" style="height: 85%"></span></li>
+				          <li><span class="orange" style="height: 40%"></span></li>
+				          <li><span class="green" style="height: 75%"></span></li>
+				          <li><span class="green" style="height: 50%"></span></li>
+				          <li><span class="green" style="height: 15%"></span></li>
+				          <li><span class="green" style="height: 25%"></span></li>
+				        </ul>
+				      </div>
+				      
+				      <div class="yearly-change">
+				        <h4>Perubahan</h4>
+				        <span><em>-</em> 201.754</span>
+				      </div>
+				    </div>
+				    <div class="section"></div>
+				  </div>
+				</div>
+				<!-- End BANSOS Chart -->
+					
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
@@ -463,33 +600,33 @@
 								
 								<div class="card-action">
 									<div class="card-action-btn pull-left">
-										<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">KTSP - Model KTSP SD 2009</span></a>
+										<a class="btn btn-flat waves-attach" href="https://drive.google.com/open?id=0B_HhxisocUs_aURyNkFlcDRvZDA" target="blank"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">KTSP - Model KTSP SD 2009</span></a>
 									</div>
 								</div>
 								<div class="card-action">
 									<div class="card-action-btn pull-left">
-										<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">Fasilitator Edisi IV Tahun 2009</span></a>
+										<a class="btn btn-flat waves-attach" href="https://drive.google.com/open?id=0B_HhxisocUs_d1dFNGVqam95Nmc" target="blank"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">Fasilitator Edisi IV Tahun 2009</span></a>
 									</div>
 								</div>
 								<div class="card-action">
 									<div class="card-action-btn pull-left">
-										<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">Juklak Festival</span></a>
+										<a class="btn btn-flat waves-attach" href="https://drive.google.com/open?id=0B_HhxisocUs_Q0pFUWZxdnNIODA" target="blank"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">Juklak Festival</span></a>
 									</div>
 								</div>
 								<div class="card-action">
 									<div class="card-action-btn pull-left">
-										<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">PERMENDAGRI No.20 Part 1 2015</span></a>
+										<a class="btn btn-flat waves-attach" href="https://drive.google.com/open?id=0B_HhxisocUs_U20wYTBoR3JGdWM" target="blank"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">PERMENDAGRI No.20 Part 1 2015</span></a>
 									</div>
 								</div>
 								<div class="card-action">
 									<div class="card-action-btn pull-left">
-										<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">Manual Penggunaan Aplikasi Rehab</span></a>
+										<a class="btn btn-flat waves-attach" href="https://drive.google.com/open?id=0B_HhxisocUs_bmNLb3QyVXBBSFE" target="blank"><span class="icon text-blue icon-lg">file_download</span>&nbsp;<span class="text-blue">Manual Penggunaan Aplikasi Rehab</span></a>
 									</div>
 								</div>
 							</div>
 							<div class="card-action">
 								<div class="card-action-btn pull-left">
-									<a class="btn btn-flat waves-attach" href="javascript:void(0)"><span class="icon text-blue icon-lg">reorder</span>&nbsp;<span class="text-blue">Lihat file lainnya</span></a>
+									<a class="btn btn-flat waves-attach" href="downloads.html" target="blank"><span class="icon text-blue icon-lg">reorder</span>&nbsp;<span class="text-blue">Lihat file lainnya</span></a>
 								</div>
 							</div>
 						</div>
